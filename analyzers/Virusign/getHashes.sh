@@ -1,10 +1,11 @@
 #!/bin/bash
-# This script downloads all available Virusshare.com hash files using curl and wget. It can be called as: ./getHashes.sh PATH
+# This script downloads all available Virusign.com hash files using curl and wget.
+# It can be called as: ./getHashes.sh PATH
 
 
 display_usage() { 
-    echo "getHashes v0.2"
-    echo "  Fetch all Virusshare.com hashes" 
+    echo "getHashes v0.1"
+    echo "  Fetch all Virusign.com hashes"
     echo -e "\n  Usage: $0 <path> \n"
 } 
 
