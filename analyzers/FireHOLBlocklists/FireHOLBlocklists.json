@@ -1,10 +1,10 @@
 {
   "name": "FireHOLBlocklists",
-  "author": "Nils Kuhnert, CERT-Bund",
+  "author": "Efi Jeremiah, NextSecurity",
   "license": "AGPL-V3",
-  "url": "https://github.com/BSI-CERT-Bund/cortex-analyzers",
-  "version": "2.0",
-  "description": "Check IP addresses against the FireHOL blocklists",
+  "url": "https://github.com/NextSecurity/Cortex-Analyzers-Modified",
+  "version": "3.0",
+  "description": "Check IP addresses against the FireHOL blocklists. Including script to locally download and update blocklists.",
   "dataTypeList": ["ip"],
   "baseConfig": "FireHOLBlocklists",
   "command": "FireHOLBlocklists/firehol_blocklists.py",
@@ -14,7 +14,43 @@
       "description": "Path to blocklists",
       "type": "string",
       "multi": false,
-      "required": true
+      "required": true,
+      "defaultValue": "FireHOLBlocklists/blocklists"
+    },
+    {
+      "name": "autoshun API key",
+      "description": "autoshun API key",
+      "type": "string",
+      "multi": false,
+      "required": false
+    },
+    {
+      "name": "ip2location API key",
+      "description": "ip2location API key",
+      "type": "string",
+      "multi": false,
+      "required": false
+    },
+    {
+      "name": "blueliv API key",
+      "description": "blueliv API key",
+      "type": "string",
+      "multi": false,
+      "required": false
+    },
+    {
+      "name": "XFORCE API key",
+      "description": "XFORCE API key",
+      "type": "string",
+      "multi": false,
+      "required": false
+    },
+    {
+      "name": "XFORCE API password",
+      "description": "XFORCE API password",
+      "type": "string",
+      "multi": false,
+      "required": false
     }
   ]
 }
