@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
 RECORDS = {
 	1 : "A",
 	28 : "AAAA",

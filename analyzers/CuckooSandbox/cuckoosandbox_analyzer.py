@@ -142,7 +142,6 @@ class CuckooSandboxAnalyzer(Analyzer):
 
         except requests.exceptions.RequestException as e:
             self.error(e)
-
         except Exception as e:
             self.unexpectedError(e)
 
