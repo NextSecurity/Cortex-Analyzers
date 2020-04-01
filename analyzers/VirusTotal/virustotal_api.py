@@ -22,7 +22,10 @@ print json.dumps(response, sort_keys=False, indent=4)
 """
 
 import os
-import StringIO
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
 try:
     import requests
 except ImportError:
