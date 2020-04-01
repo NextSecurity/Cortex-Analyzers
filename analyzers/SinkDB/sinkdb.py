@@ -1,6 +1,7 @@
-#!/usr/bin/env python
-import subprocess
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
+import subprocess
 from cortexutils.analyzer import Analyzer
 
 

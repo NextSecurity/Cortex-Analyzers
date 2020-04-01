@@ -1,6 +1,7 @@
-#!/usr/bin/env python
-import requests
+#!/usr/bin/env python3
+# encoding: utf-8
 
+import requests
 from cortexutils.analyzer import Analyzer
 
 

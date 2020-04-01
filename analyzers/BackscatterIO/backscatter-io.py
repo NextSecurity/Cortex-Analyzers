@@ -1,5 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 from backscatter import Backscatter
 from collections import defaultdict, OrderedDict
 from cortexutils.analyzer import Analyzer

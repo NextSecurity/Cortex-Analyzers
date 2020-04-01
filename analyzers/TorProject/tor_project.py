@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
 import requests
 from datetime import datetime, timedelta
 from dateutil.parser import parse

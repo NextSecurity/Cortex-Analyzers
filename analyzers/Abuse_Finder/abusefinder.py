@@ -1,5 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*
+
 """This analyzer leverages abuse_finder, an Open Source Python library provided by CERT Société Générale to help
 automatically find the most appropriate contact for abuse reports.
 See https://github.com/certsocietegenerale/abuse_finder for further reference.

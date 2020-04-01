@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
 import requests
 import csv
 from diskcache import Cache

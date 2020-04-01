@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# encoding: utf-8
+
 from cortexutils.analyzer import Analyzer
 import tor_blutmagie
 

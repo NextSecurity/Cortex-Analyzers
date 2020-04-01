@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*
+
 from cortexutils.analyzer import Analyzer
 from censys.certificates import CensysCertificates
 from censys.ipv4 import CensysIPv4

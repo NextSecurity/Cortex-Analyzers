@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """ Simple class to interact with VirusTotal's Public and Private API as well as VirusTotal Intelligence.
