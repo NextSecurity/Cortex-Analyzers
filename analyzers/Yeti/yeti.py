@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import pyeti
 from cortexutils.analyzer import Analyzer
 
@@ -10,6 +9,7 @@ class YetiAnalyzer(Analyzer):
     def __init__(self):
         Analyzer.__init__(self)
         self.url = self.get_param('config.url', None, 'Missing URL for Yeti API')
+        self.api_key = self.get_param('config.api_key')
 
     def summary(self, raw):
         count = len(raw.get('findings', []))
@@ -26,7 +26,7 @@ class YetiAnalyzer(Analyzer):
         return result
 
     def run(self):
-        api = pyeti.YetiApi("{}/api/".format(self.url))
+        api = pyeti.YetiApi("{}/api/".format(self.url), api_key=self.api_key)
         data = self.get_data()
 
         try:

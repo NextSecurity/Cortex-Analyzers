@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*
-
 from cortexutils.analyzer import Analyzer
 from censys.certificates import CensysCertificates
 from censys.ipv4 import CensysIPv4
@@ -17,7 +15,7 @@ class CensysAnalyzer(Analyzer):
             None,
             'No UID for Censys given. Please add it to the cortex configuration.'
         )
-        self.__manager_api_key = self.get_param(
+        self.__api_key = self.get_param(
             'config.key',
             None,
             'No API-Key for Censys given. Please add it to the cortex configuration.'
@@ -31,7 +29,7 @@ class CensysAnalyzer(Analyzer):
         :type ip: str
         :return: dict
         """
-        c = CensysIPv4(api_id=self.__uid, api_secret=self.__manager_api_key)
+        c = CensysIPv4(api_id=self.__uid, api_secret=self.__api_key)
         return c.view(ip)
 
     def search_certificate(self, hash):
@@ -42,7 +40,7 @@ class CensysAnalyzer(Analyzer):
         :type hash: str
         :return: dict
         """
-        c = CensysCertificates(api_id=self.__uid, api_secret=self.__manager_api_key)
+        c = CensysCertificates(api_id=self.__uid, api_secret=self.__api_key)
         return c.view(hash)
 
     def search_website(self, dom):
@@ -52,7 +50,7 @@ class CensysAnalyzer(Analyzer):
         :type dom: str
         :return: dict
         """
-        c = CensysWebsites(api_id=self.__uid, api_secret=self.__manager_api_key)
+        c = CensysWebsites(api_id=self.__uid, api_secret=self.__api_key)
         return c.view(dom)
 
     def run(self):

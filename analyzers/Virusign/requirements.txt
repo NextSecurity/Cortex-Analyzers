@@ -1,3 +1,0 @@
-requests
-progressbar2
-cortexutils
