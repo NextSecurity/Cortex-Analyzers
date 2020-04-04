@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# encoding: utf-8
+# -*- coding: utf-8 -*
+
 import requests
 from datetime import datetime
 from urllib3.exceptions import InsecureRequestWarning
-
 from cortexutils.analyzer import Analyzer
 
 
@@ -196,9 +196,8 @@ class IBMXForceAnalyzer(Analyzer):
         elif score_value >= 7 or score_value == 'high':
             level = "malicious"
 
-        #taxonomies.append(self.build_taxonomy(level, namespace, predicate, "{}".format(score)))
+        # taxonomies.append(self.build_taxonomy(level, namespace, predicate, "{}".format(score)))
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, "{}".format(score)))
-
 
         return {"taxonomies": taxonomies}
 

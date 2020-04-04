@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # encoding: utf-8
+
 import json
 import requests
 import datetime
 import math
 from cortexutils.analyzer import Analyzer
+
 
 class DShieldAnalyzer(Analyzer):
     def __init__(self):
@@ -18,10 +20,10 @@ class DShieldAnalyzer(Analyzer):
     def artifacts(self, raw):
         artifacts = []
         if 'as' in raw:
-            artifacts.append({'type':'autonomous-system','value':str(raw['as'])})
+            artifacts.append({'type': 'autonomous-system', 'value': str(raw['as'])})
 
         if 'asabusecontact' in raw:
-            artifacts.append({'type': 'mail', 'value':str(raw['asabusecontact'])})
+            artifacts.append({'type': 'mail', 'value': str(raw['asabusecontact'])})
         return artifacts
 
     def summary(self, raw):
@@ -45,18 +47,19 @@ class DShieldAnalyzer(Analyzer):
             else:
                 level = 'malicious'
 
-        value = "{} count(s) / {} attack(s) / {} threatfeed(s)".format(raw['count'], raw['attacks'], raw['threatfeedscount'])
+        value = "{} count(s) / {} attack(s) / {} threatfeed(s)".format(raw['count'], raw['attacks'],
+                                                                       raw['threatfeedscount'])
 
         taxonomies.append(self.build_taxonomy(level, "DShield", "Score", value))
         return {"taxonomies": taxonomies}
 
     def get_reputation(self, risk):
         if risk <= 1:
-            return("Safe")
+            return ("Safe")
         elif risk <= 6:
-            return("Suspicious")
+            return ("Suspicious")
         else:
-            return("Malicious")
+            return ("Malicious")
 
     def run(self):
         if self.data_type == 'ip':
@@ -73,7 +76,8 @@ class DShieldAnalyzer(Analyzer):
                 results['firstseen'] = info['mindate'] if isinstance(info['mindate'], str) else 'None'
                 results['updated'] = info['updated'] if isinstance(info['updated'], str) else 'None'
                 results['comment'] = info['comment'] if isinstance(info['comment'], str) else 'None'
-                results['asabusecontact'] = info['asabusecontact'] if isinstance(info['asabusecontact'], str) else 'Unknown'
+                results['asabusecontact'] = info['asabusecontact'] if isinstance(info['asabusecontact'],
+                                                                                 str) else 'Unknown'
                 results['as'] = info['as']
                 results['asname'] = info['asname']
                 results['ascountry'] = info['ascountry']
@@ -84,8 +88,8 @@ class DShieldAnalyzer(Analyzer):
                     results['threatfeeds'] = ''
                 else:
                     results['threatfeedscount'] = len(json.loads(json.dumps(info['threatfeeds'])))
-                    results['threatfeeds'] = info['threatfeeds'] 
-                # Compute a risk level based on collected information
+                    results['threatfeeds'] = info['threatfeeds']
+                    # Compute a risk level based on collected information
                 results['maxrisk'] = 0
                 maxrisk = 10
                 if results['attacks'] > 0:

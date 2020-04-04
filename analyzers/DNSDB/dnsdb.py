@@ -1,5 +1,6 @@
-#!/usr/bin/env python2
-# encoding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
 import datetime
 from urllib2 import HTTPError
 from dnsdb_query import DnsdbClient, QueryError
@@ -65,7 +66,7 @@ class DnsDbAnalyzer(Analyzer):
                 "records": map(lambda r: self.update_date('time_first', self.update_date('time_last', r)),
                                self.execute_dnsdb_service(client))
             })
-        except HTTPError, e:
+        except HTTPError as e:
             if e.code != 404:
                 self.unexpectedError(e)
             else:
