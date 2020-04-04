@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*
 
 import requests
 import time
 import os
-
 from cortexutils.analyzer import Analyzer
 
 
@@ -26,8 +26,7 @@ class IntezerCommunityAnalyzer(Analyzer):
                 response = requests.post(base_url + '/get-access-token', json={'api_key': api_key})
                 response.raise_for_status()
                 session = requests.session()
-                session.headers['Authorization'] = session.headers['Authorization'] = 'Bearer %s' % response.json()[
-                    'result']
+                session.headers['Authorization'] = 'Bearer %s' % response.json()['result']
 
                 with open(filepath, 'rb') as file_to_upload:
                     files = {'file': (filename, file_to_upload)}
@@ -36,17 +35,15 @@ class IntezerCommunityAnalyzer(Analyzer):
                         self.error('Error sending file to Intezer Analyzer\n{}'.format(response.text))
 
                 while response.status_code != 200:
-                    time.sleep(3)
+                    time.sleep(5)
                     result_url = response.json()['result_url']
                     response = session.get(base_url + result_url)
                     response.raise_for_status()
 
                 report = response.json()
                 self.report(report)
-
             else:
                 self.notSupported()
-
         except requests.HTTPError as e:
             self.error(e)
         except Exception as e:
