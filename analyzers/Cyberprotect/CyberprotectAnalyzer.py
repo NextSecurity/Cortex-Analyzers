@@ -4,8 +4,8 @@
 import requests
 from cortexutils.analyzer import Analyzer
 
-class CyberprotectAnalyzer(Analyzer):
 
+class CyberprotectAnalyzer(Analyzer):
     URI = "https://threatscore.cyberprotect.fr/api/score/"
 
     def __init__(self):
@@ -41,6 +41,7 @@ class CyberprotectAnalyzer(Analyzer):
                 self.unexpectedError(e)
         else:
             self.notSupported()
+
 
 if __name__ == '__main__':
     CyberprotectAnalyzer().run()

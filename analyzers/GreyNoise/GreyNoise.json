@@ -2,7 +2,7 @@
     "name": "GreyNoise",
     "version": "2.3",
     "author": "Nclose",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "APLv2",
     "description": "Determine whether an IP has known scanning activity using GreyNoise.",
     "dataTypeList": ["ip"],

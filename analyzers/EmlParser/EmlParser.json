@@ -2,7 +2,7 @@
     "name": "EmlParser",
     "version": "1.2",
     "author": "ninsmith",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "AGPL-V3",
     "baseConfig": "EmlParser",
     "config": {

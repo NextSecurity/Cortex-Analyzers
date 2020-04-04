@@ -2,7 +2,7 @@
     "name": "StopForumSpam",
     "author": "Marc-Andre Doll, STARC by EXAPROBE",
     "license": "AGPL-V3",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "version": "1.0",
     "baseConfig": "StopForumSpam",
     "config": {

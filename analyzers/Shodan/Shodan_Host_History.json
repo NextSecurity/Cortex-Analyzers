@@ -2,7 +2,7 @@
   "name": "Shodan_Host_History",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve Shodan history scan results  for an IP address.",
   "dataTypeList": ["ip"],

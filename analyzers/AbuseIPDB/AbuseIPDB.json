@@ -2,7 +2,7 @@
     "name": "AbuseIPDB",
     "version": "1.0",
     "author": "Matteo Lodi",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "AGPL-v3",
     "description": "Determine whether an IP was reported or not as malicious by AbuseIPDB",
     "dataTypeList": ["ip"],

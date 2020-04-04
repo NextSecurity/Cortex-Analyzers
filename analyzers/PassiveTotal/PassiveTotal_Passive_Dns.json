@@ -2,7 +2,7 @@
   "name": "PassiveTotal_Passive_Dns",
   "version": "2.1",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Passive DNS Lookup.",
   "dataTypeList": ["domain", "fqdn", "ip"],

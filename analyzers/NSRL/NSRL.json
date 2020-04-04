@@ -2,7 +2,7 @@
   "name": "NSRL",
   "author": "Andrea Garavaglia, Davide Arcuri - LDO-CERT",
   "license": "AGPL-V3",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "version": "1.0",
   "description": "Query NSRL",
   "dataTypeList": [

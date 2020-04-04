@@ -2,7 +2,7 @@
     "name": "Pulsedive_GetIndicator",
     "version": "1.0",
     "author": "Nils Kuhnert",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "AGPL-V3",
     "description": "Search Pulsedive.com for a giver domain name, hash, ip or url",
     "dataTypeList": ["url", "domain", "ip", "hash"],

@@ -2,7 +2,7 @@
   "name": "Msg_Parser",
   "version": "3.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Parse Outlook MSG files and extract the main artifacts.",
   "dataTypeList": ["file"],

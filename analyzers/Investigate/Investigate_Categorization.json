@@ -2,7 +2,7 @@
   "name": "Investigate_Categorization",
   "version": "1.0",
   "author": "Cisco Umbrella Research @opendns",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Investigate",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Investigate",
   "license": "AGPL-V3",
   "description": "Retrieve Investigate categorization and security features for a domain.",
   "dataTypeList": ["domain", "fqdn"],

@@ -3,7 +3,7 @@
   "name": "AbuseIPDB",
   "version": "1.0",
   "author": "Matteo Lodi",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-v3",
   "description": "Determine whether an IP was reported or not as malicious by AbuseIPDB",
   "dataTypeList": [
@@ -39,7 +39,7 @@
   "name": "Abuse_Finder",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Find abuse contacts associated with domain names, URLs, IPs and email addresses.",
   "dataTypeList": [
@@ -56,7 +56,7 @@
   "name": "BackscatterIO_Enrichment",
   "version": "1.0",
   "author": "brandon@backscatter.io",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "APLv2",
   "description": "Enrich values using Backscatter.io data.",
   "dataTypeList": [
@@ -88,7 +88,7 @@
   "name": "BackscatterIO_GetObservations",
   "version": "1.0",
   "author": "brandon@backscatter.io",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "APLv2",
   "description": "Determine whether a value has known scanning activity using Backscatter.io data.",
   "dataTypeList": [
@@ -119,7 +119,7 @@
   "name": "C1fApp",
   "version": "1.0",
   "author": "etz69",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Query C1fApp OSINT Aggregator for IPs, domains and URLs",
   "dataTypeList": [
@@ -450,7 +450,7 @@
   "name": "DNSDB_DomainName",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DNSDB to fetch historical records for a domain.",
   "dataTypeList": [
@@ -485,7 +485,7 @@
   "name": "DNSDB_IPHistory",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DNSDB to fetch historical records for an IP address.",
   "dataTypeList": [
@@ -519,7 +519,7 @@
   "name": "DNSDB_NameHistory",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DNSDB to fetch historical records for a fully-qualified domain name.",
   "dataTypeList": [
@@ -601,7 +601,7 @@
   "name": "DomainTools_HostingHistory",
   "version": "2.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of historical registrant, name servers and IP addresses for a domain name.",
   "dataTypeList": [
@@ -634,7 +634,7 @@
   "name": "DomainTools_Reputation",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a reputation score on a domain or fqdn",
   "dataTypeList": [
@@ -668,7 +668,7 @@
   "name": "DomainTools_ReverseIP",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of domain names sharing the same IP address.",
   "dataTypeList": [
@@ -703,7 +703,7 @@
   "name": "DomainTools_ReverseIPWhois",
   "version": "2.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of IP addresses which share the same registrant information.",
   "dataTypeList": [
@@ -739,7 +739,7 @@
   "name": "DomainTools_ReverseNameServer",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of domain names that share the same primary or secondary name server.",
   "dataTypeList": [
@@ -772,7 +772,7 @@
   "name": "DomainTools_ReverseWhois",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of domain names which share the same registrant information.",
   "dataTypeList": [
@@ -808,7 +808,7 @@
   "name": "DomainTools_Risk",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a risk score and evidence details on a domain or fqdn",
   "dataTypeList": [
@@ -842,7 +842,7 @@
   "name": "DomainTools_WhoisHistory",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get a list of historical Whois records associated with a domain name.",
   "dataTypeList": [
@@ -875,7 +875,7 @@
   "name": "DomainTools_WhoisLookup",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get the ownership record for a domain or an IP address with basic registration details parsed.",
   "dataTypeList": [
@@ -909,7 +909,7 @@
   "name": "DomainTools_WhoisLookupUnparsed",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use DomainTools to get the ownership record for an IP address or a domain without parsing.",
   "dataTypeList": [
@@ -1014,7 +1014,7 @@
   "name": "EmlParser",
   "version": "1.2",
   "author": "ninsmith",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "baseConfig": "EmlParser",
   "config": {
@@ -1033,7 +1033,7 @@
   "name": "FileInfo",
   "version": "6.0",
   "author": "TheHive-Project",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Parse files in several formats such as OLE and OpenXML to detect VBA macros, extract their source code, generate useful information on PE, PDF files...",
   "dataTypeList": [
@@ -1141,7 +1141,7 @@
   "name": "Fortiguard_URLCategory",
   "version": "2.1",
   "author": "Eric Capuano",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "dataTypeList": [
     "domain",
@@ -1185,7 +1185,7 @@
   "name": "GoogleDNS_resolve",
   "version": "1.0.0",
   "author": "CERT-LaPoste",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Request Google DNS over HTTPS service",
   "dataTypeList": [
@@ -1237,7 +1237,7 @@
   "name": "GreyNoise",
   "version": "2.3",
   "author": "Nclose",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "APLv2",
   "description": "Determine whether an IP has known scanning activity using GreyNoise.",
   "dataTypeList": [
@@ -1265,7 +1265,7 @@
   "name": "HIBP_Query",
   "version": "1.0",
   "author": "Matt Erasmus",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Query haveibeenpwned.com for a compromised email address",
   "dataTypeList": [
@@ -1293,7 +1293,7 @@
   "name": "Hashdd_Detail",
   "version": "1.0",
   "author": "iosonogio",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPLv3",
   "description": "Determine whether a hash is good or bad; if good then list what it is.",
   "dataTypeList": [
@@ -1319,7 +1319,7 @@
   "name": "Hashdd_Status",
   "version": "1.0",
   "author": "iosonogio",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPLv3",
   "description": "Determine whether a hash is good or bad.",
   "dataTypeList": [
@@ -1345,7 +1345,7 @@
   "name": "Hipposcore",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the Hippocampe Score report associated with an IP address, a domain or a URL.",
   "dataTypeList": [
@@ -1374,7 +1374,7 @@
   "name": "HippoMore",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the Hippocampe detailed report for an IP address, a domain or a URL.",
   "dataTypeList": [
@@ -1431,7 +1431,7 @@
   "name": "HybridAnalysis_GetReport",
   "version": "1.0",
   "author": "Daniil Yugoslavskiy, Tieto",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "dataTypeList": [
     "hash",
@@ -1514,7 +1514,7 @@
   "name": "Investigate_Categorization",
   "version": "1.0",
   "author": "Cisco Umbrella Research @opendns",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Investigate",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Investigate",
   "license": "AGPL-V3",
   "description": "Retrieve Investigate categorization and security features for a domain.",
   "dataTypeList": [
@@ -1541,7 +1541,7 @@
   "name": "Investigate_Sample",
   "version": "1.0",
   "author": "Cisco Umbrella Research @opendns",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Investigate",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Investigate",
   "license": "AGPL-V3",
   "description": "Retrieve sample data from Investigate for a hash. (Sample data provided by ThreatGrid)",
   "dataTypeList": [
@@ -1567,7 +1567,7 @@
   "name": "JoeSandbox_File_Analysis_Inet",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Joe Sandbox file analysis with Internet access.",
   "dataTypeList": [
@@ -1616,7 +1616,7 @@
   "name": "JoeSandbox_File_Analysis_Noinet",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Joe Sandbox file analysis without Internet access.",
   "dataTypeList": [
@@ -1665,7 +1665,7 @@
   "name": "JoeSandbox_Url_Analysis",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Joe Sandbox URL analysis.",
   "dataTypeList": [
@@ -1843,7 +1843,7 @@
   "name": "Malwares_GetReport",
   "version": "1.0",
   "author": "LDO-CERT",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the latest Malwares report for a file, hash, domain or an IP address.",
   "dataTypeList": [
@@ -1874,7 +1874,7 @@
   "name": "Malwares_Scan",
   "version": "1.0",
   "author": "LDO-CERT",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use Malwares' API to scan a file or URL.",
   "dataTypeList": [
@@ -1903,7 +1903,7 @@
   "name": "MaxMind_GeoIP",
   "version": "3.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use MaxMind to geolocate an IP address.",
   "dataTypeList": [
@@ -1965,7 +1965,7 @@
   "name": "Msg_Parser",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Parse Outlook MSG files and extract the main artifacts.",
   "dataTypeList": [
@@ -1979,7 +1979,7 @@
   "name": "Nessus",
   "version": "2.0",
   "author": "Guillaume Rousse",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use Nessus Professional to scan hosts.",
   "dataTypeList": [
@@ -2038,7 +2038,7 @@
   "name": "OTXQuery",
   "version": "2.0",
   "author": "Eric Capuano",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Query AlienVault OTX for IPs, domains, URLs, or file hashes.",
   "dataTypeList": [
@@ -2144,7 +2144,7 @@
   "name": "Onyphe_Inetnum",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Retrieve Onyphe Inetnum information on an IPv{4,6} address with history.",
   "dataTypeList": [
@@ -2222,7 +2222,7 @@
   "name": "Onyphe_Threats",
   "version": "1.0",
   "author": "Pierre Baudry, Adrien Barchapt",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Retrieve Onyphe threat information for the given IPv{4,6} address with history.",
   "dataTypeList": [
@@ -2248,7 +2248,7 @@
   "name": "PassiveTotal_Enrichment",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Enrichment Lookup.",
   "dataTypeList": [
@@ -2283,7 +2283,7 @@
   "name": "PassiveTotal_Malware",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Malware Lookup.",
   "dataTypeList": [
@@ -2318,7 +2318,7 @@
   "name": "PassiveTotal_Osint",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal OSINT Lookup.",
   "dataTypeList": [
@@ -2353,7 +2353,7 @@
   "name": "PassiveTotal_Passive_Dns",
   "version": "2.1",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Passive DNS Lookup.",
   "dataTypeList": [
@@ -2388,7 +2388,7 @@
   "name": "PassiveTotal_Ssl_Certificate_Details",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal SSL Certificate Details Lookup.",
   "dataTypeList": [
@@ -2422,7 +2422,7 @@
   "name": "PassiveTotal_Ssl_Certificate_History",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal SSL Certificate History Lookup.",
   "dataTypeList": [
@@ -2456,7 +2456,7 @@
   "name": "PassiveTotal_Unique_Resolutions",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Unique Resolutions Lookup.",
   "dataTypeList": [
@@ -2491,7 +2491,7 @@
   "name": "PassiveTotal_Whois_Details",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "PassiveTotal Whois Details Lookup.",
   "dataTypeList": [
@@ -2526,7 +2526,7 @@
   "name": "Patrowl_GetReport",
   "version": "1.0",
   "author": "Nicolas Mattiocco",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the current Patrowl report for a fdqn, a domain or an IP address.",
   "dataTypeList": [
@@ -2683,7 +2683,7 @@
   "name": "PhishTank_CheckURL",
   "version": "2.1",
   "author": "Eric Capuano",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use PhishTank to check if a URL is a verified phishing site.",
   "dataTypeList": [
@@ -2706,7 +2706,7 @@
   "name": "PhishingInitiative_Lookup",
   "version": "2.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use Phishing Initiative to check if a URL is a verified phishing site.",
   "dataTypeList": [
@@ -2729,7 +2729,7 @@
   "name": "PhishingInitiative_Scan",
   "version": "1.0",
   "author": "Remi Pointel",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use Phishing Initiative to scan a URL.",
   "dataTypeList": [
@@ -2803,7 +2803,7 @@
   "name": "Pulsedive_GetIndicator",
   "version": "1.0",
   "author": "Nils Kuhnert",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Search Pulsedive.com for a giver domain name, hash, ip or url",
   "dataTypeList": [
@@ -2854,7 +2854,7 @@
   "name": "Robtex_Forward_PDNS_Query",
   "version": "1.0",
   "author": "Nils Kuhnert",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Check domains and FQDNs using the Robtex passive DNS API.",
   "dataTypeList": [
@@ -2872,7 +2872,7 @@
   "name": "Robtex_IP_Query",
   "version": "1.0",
   "author": "Nils Kuhnert",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Check IPs using the Robtex IP API.",
   "dataTypeList": [
@@ -2889,7 +2889,7 @@
   "name": "Robtex_Reverse_PDNS_Query",
   "version": "1.0",
   "author": "Nils Kuhnert",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Check IPs using the Robtex reverse passive DNS API.",
   "dataTypeList": [
@@ -2958,7 +2958,7 @@
   "name": "Shodan_DNSResolve",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve domain resolutions on Shodan.",
   "dataTypeList": [
@@ -2984,7 +2984,7 @@
   "name": "Shodan_Host",
   "version": "1.0",
   "author": "Sebastien Larinier @Sebdraven",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve key Shodan information on an IP address.",
   "dataTypeList": [
@@ -3010,7 +3010,7 @@
   "name": "Shodan_Host_History",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve Shodan history scan results  for an IP address.",
   "dataTypeList": [
@@ -3036,7 +3036,7 @@
   "name": "Shodan_InfoDomain",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve key Shodan information on a domain.",
   "dataTypeList": [
@@ -3062,7 +3062,7 @@
   "name": "Shodan_ReverseDNS",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve ip reverse DNS resolutions on Shodan.",
   "dataTypeList": [
@@ -3088,7 +3088,7 @@
   "name": "Shodan_Search",
   "version": "2.0",
   "author": "Sebastien Larinier @Sebdraven",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Search query on Shodan",
   "dataTypeList": [
@@ -3264,7 +3264,7 @@
   "name": "StopForumSpam",
   "author": "Marc-Andre Doll, STARC by EXAPROBE",
   "license": "AGPL-V3",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "version": "1.0",
   "baseConfig": "StopForumSpam",
   "config": {
@@ -3301,7 +3301,7 @@
   "name": "TalosReputation",
   "version": "1.0",
   "author": "Gabriel Antonio da Silva",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the Talos IP reputation",
   "dataTypeList": [
@@ -3335,7 +3335,7 @@
   "name": "TorBlutmagie",
   "author": "Marc-André DOLL, STARC by EXAPROBE",
   "license": "AGPL-V3",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "version": "1.0",
   "description": "Query http://torstatus.blutmagie.de/query_export.php/Tor_query_EXPORT.csv for TOR exit nodes IP addresses or names.",
   "dataTypeList": [
@@ -3368,7 +3368,7 @@
   "name": "TorProject",
   "author": "Marc-André DOLL, STARC by EXAPROBE",
   "license": "AGPL-V3",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "version": "1.0",
   "description": "Query https://check.torproject.org/exit-addresses for TOR exit nodes IP addresses.",
   "dataTypeList": [
@@ -3472,7 +3472,7 @@
   "name": "UnshortenLink",
   "version": "1.1",
   "author": "Remi Pointel, CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use UnshortenLink to reveal the real URL.",
   "dataTypeList": [
@@ -3556,7 +3556,7 @@
   "name": "VirusTotal_GetReport",
   "version": "3.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Get the latest VirusTotal report for a file, hash, domain or an IP address.",
   "dataTypeList": [
@@ -3594,7 +3594,7 @@
   "name": "VirusTotal_Scan",
   "version": "3.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use VirusTotal to scan a file or URL.",
   "dataTypeList": [

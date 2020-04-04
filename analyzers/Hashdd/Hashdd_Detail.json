@@ -2,7 +2,7 @@
     "name": "Hashdd_Detail",
     "version": "1.0",
     "author": "iosonogio",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "AGPLv3",
     "description": "Determine whether a hash is good or bad; if good then list what it is.",
     "dataTypeList": ["hash"],

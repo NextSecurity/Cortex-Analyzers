@@ -41,7 +41,7 @@
   "name": "Mailer",
   "version": "1.0",
   "author": "CERT-BDF",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Send an email with information from a TheHive case or alert",
   "dataTypeList": [
@@ -81,7 +81,7 @@
   "name": "Umbrella Blacklister",
   "version": "1.0",
   "author": "Kyle Parrish",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Add domain to Umbrella blacklist via Enforcement API.",
   "dataTypeList": [

@@ -2,7 +2,7 @@
   "name": "Fortiguard_URLCategory",
   "version": "2.1",
   "author": "Eric Capuano",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "dataTypeList": ["domain", "url", "fqdn"],
   "description": "Check the Fortiguard category of a URL, FQDN or a domain. Check the full available list at https://fortiguard.com/webfilter/categories",

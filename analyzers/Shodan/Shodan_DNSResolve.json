@@ -2,7 +2,7 @@
   "name": "Shodan_DNSResolve",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers/Shodan",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified/Shodan",
   "license": "AGPL-V3",
   "description": "Retrieve domain resolutions on Shodan.",
   "dataTypeList": ["domain", "fqdn"],

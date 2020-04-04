@@ -2,7 +2,7 @@
   "name": "Nessus",
   "version": "2.0",
   "author": "Guillaume Rousse",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Use Nessus Professional to scan hosts.",
   "dataTypeList": ["ip", "fqdn"],

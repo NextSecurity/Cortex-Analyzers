@@ -2,7 +2,7 @@
     "name": "BackscatterIO_GetObservations",
     "version": "1.0",
     "author": "brandon@backscatter.io",
-    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "APLv2",
     "description": "Determine whether a value has known scanning activity using Backscatter.io data.",
     "dataTypeList": ["ip", "network", "autonomous-system"],

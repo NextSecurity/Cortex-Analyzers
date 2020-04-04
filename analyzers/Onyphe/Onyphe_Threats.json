@@ -2,7 +2,7 @@
   "name": "Onyphe_Threats",
   "version": "1.0",
   "author": "Pierre Baudry, Adrien Barchapt",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Retrieve Onyphe threat information for the given IPv{4,6} address with history.",
   "dataTypeList": ["ip"],

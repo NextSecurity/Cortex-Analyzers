@@ -22,7 +22,7 @@
       "description": "API key",
       "type": "string",
       "multi": false,
-      "required": false
+      "required": true
     }
   ]
 }

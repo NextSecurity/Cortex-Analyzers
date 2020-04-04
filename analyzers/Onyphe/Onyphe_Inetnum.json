@@ -2,7 +2,7 @@
   "name": "Onyphe_Inetnum",
   "version": "1.0",
   "author": "ANSSI",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Retrieve Onyphe Inetnum information on an IPv{4,6} address with history.",
   "dataTypeList": ["ip"],
