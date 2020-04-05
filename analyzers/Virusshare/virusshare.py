@@ -4,13 +4,13 @@
 from cortexutils.analyzer import Analyzer
 import io
 import os
-import hashlib
+from filehash import FileHash
 
 
 class VirusshareAnalyzer(Analyzer):
     """
     This analyzer allows searching through a previously downloaded hash list of virusshare. If the hash has not the
-    length of 32 characters (md5), search is skipped and the ``isonvs`` report parameter is set to ``unknown``. In the
+    length of 32 characters (md5), search is skipped and the ``exists`` report parameter is set to ``unknown``. In the
     report, a button is placed for redirecting to virusshare.com.
     As parameter this analyzer takes ``path`` which contains the path (obviously...) to the virusshare hash lists. To be
     able to downloads the lists in an easier way, ``download_hashes.py`` was provided. More info in the documentation.
@@ -28,8 +28,8 @@ class VirusshareAnalyzer(Analyzer):
         namespace = "Virusshare"
         predicate = "Search"
 
-        if raw["isonvs"]:
-            if raw["isonvs"] == "unknown":
+        if raw["exists"]:
+            if raw["exists"] == "unknown":
                 value = "Not MD5"
                 level = "suspicious"
             else:
@@ -46,15 +46,12 @@ class VirusshareAnalyzer(Analyzer):
         if self.data_type == 'hash':
             searchhash = self.get_data()
             if len(searchhash) != 32:
-                self.report({'isonvs': 'unknown',
+                self.report({'exists': 'unknown',
                              'hash': searchhash})
         elif self.data_type == 'file':
             filepath = self.get_param('file')
-            hasher = hashlib.md5()
-            with io.open(filepath, mode='rb') as afile:
-                for chunk in iter(lambda: afile.read(65536), b''):
-                    hasher.update(chunk)
-            searchhash = hasher.hexdigest()
+            md5hasher = FileHash('md5')
+            searchhash = md5hasher.hash_file(filepath)
         else:
             self.error('Unsupported data type.')
 
@@ -69,9 +66,9 @@ class VirusshareAnalyzer(Analyzer):
                     if line[0] == '#':
                         continue
                     if searchhash.lower() in line:
-                        self.report({'isonvs': True,
+                        self.report({'exists': True,
                                      'md5': searchhash})
-        self.report({'isonvs': False,
+        self.report({'exists': False,
                      'md5': searchhash})
 
 
