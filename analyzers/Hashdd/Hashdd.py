@@ -3,6 +3,7 @@
 
 import requests
 from cortexutils.analyzer import Analyzer
+from filehash import FileHash
 
 
 class HashddAnalyzer(Analyzer):
@@ -22,9 +23,9 @@ class HashddAnalyzer(Analyzer):
 
     def hashdd_check(self, data):
         if self.hashdd_key is None:
-            postdata = {'hash': self.get_data()}
+            postdata = {'hash': data}
         else:
-            postdata = {'hash': self.get_data(), 'api_key': self.hashdd_key}
+            postdata = {'hash': data, 'api_key': self.hashdd_key}
 
         r = requests.post(self.url, data=postdata)
         r.raise_for_status()  # Raise exception on HTTP errors
@@ -54,16 +55,19 @@ class HashddAnalyzer(Analyzer):
         return {"taxonomies": taxonomies}
 
     def run(self):
-        if self.data_type != 'hash':
+        if self.data_type not in ['hash', 'file']:
             self.notSupported()
-
-        data = self.get_param('data', None, 'Data is missing')
-        hash = data.upper()
+        elif self.data_type == 'file':
+            filepath = self.get_param('file')
+            md5hasher = FileHash('md5')
+            data = md5hasher.hash_file(filepath)
+        elif self.data_type == 'hash':
+            data = self.get_data()
 
         response = self.hashdd_check(data)
 
+        hash = data.upper()
         if response['result'] == 'SUCCESS':
-
             if self.service == "status":
                 self.report({
                     'known_level': response[hash]['known_level']

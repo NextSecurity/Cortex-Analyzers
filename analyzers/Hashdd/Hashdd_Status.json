@@ -1,11 +1,11 @@
 {
     "name": "Hashdd_Status",
     "version": "1.0",
-    "author": "iosonogio",
+    "author": "Efi Jeremiah, NextSecurity",
     "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
     "license": "AGPLv3",
     "description": "Determine whether a hash is good or bad.",
-    "dataTypeList": ["hash"],
+    "dataTypeList": ["hash", "file"],
     "baseConfig": "Hashdd",
     "config": {
       "service": "status"
