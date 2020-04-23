@@ -1,0 +1,8 @@
+{
+  "dataType": "url",
+  "data": "http://www.example.com",
+  "config" : {
+    "url": "",
+    "token": ""
+  }
+}
