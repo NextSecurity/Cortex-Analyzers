@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*
-
-from cortexutils.analyzer import Analyzer
+# encoding: utf-8
 
 import requests
 import time
 from os.path import basename
+from cortexutils.analyzer import Analyzer
 
 
 class CuckooSandboxAnalyzer(Analyzer):
