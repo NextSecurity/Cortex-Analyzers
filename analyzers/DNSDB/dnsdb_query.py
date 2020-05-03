@@ -40,8 +40,10 @@ options = None
 
 locale.setlocale(locale.LC_ALL, '')
 
+
 class QueryError(Exception):
     pass
+
 
 class DnsdbClient(object):
     def __init__(self, server, apikey, limit=None):
@@ -98,11 +100,14 @@ class DnsdbClient(object):
                 break
             yield json.loads(line)
 
+
 def quote(path):
     return urllib.quote(path, safe='')
 
+
 def sec_to_text(ts):
     return time.strftime('%Y-%m-%d %H:%M:%S -0000', time.gmtime(ts))
+
 
 def rrset_to_text(m):
     s = StringIO()
@@ -130,13 +135,15 @@ def rrset_to_text(m):
     s.seek(0)
     return s.read()
 
+
 def rdata_to_text(m):
     return '%s IN %s %s' % (m['rrname'], m['rrtype'], m['rdata'])
+
 
 def parse_config(cfg_fname):
     config = {}
     cfg_files = filter(os.path.isfile,
-            (cfg_fname, os.path.expanduser('~/.dnsdb-query.conf')))
+                       (cfg_fname, os.path.expanduser('~/.dnsdb-query.conf')))
 
     if not cfg_files:
         raise IOError(errno.ENOENT, 'dnsdb_query: No config files found')
@@ -148,6 +155,7 @@ def parse_config(cfg_fname):
             config[key] = val
 
     return config
+
 
 def time_parse(s):
     try:
@@ -170,38 +178,40 @@ def time_parse(s):
 
     m = re.match(r'^(?=\d)(?:(\d+)w)?(?:(\d+)d)?(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?$', s, re.I)
     if m:
-        return -1*(int(m.group(1) or 0)*604800 +  \
-                int(m.group(2) or 0)*86400+  \
-                int(m.group(3) or 0)*3600+  \
-                int(m.group(4) or 0)*60+  \
-                int(m.group(5) or 0))
+        return -1 * (int(m.group(1) or 0) * 604800 + \
+                     int(m.group(2) or 0) * 86400 + \
+                     int(m.group(3) or 0) * 3600 + \
+                     int(m.group(4) or 0) * 60 + \
+                     int(m.group(5) or 0))
 
     raise ValueError('Invalid time: "%s"' % s)
+
 
 def main():
     global cfg
     global options
 
-    parser = optparse.OptionParser(epilog='Time formats are: "%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d" (UNIX timestamp), "-%d" (Relative time in seconds), BIND format (e.g. 1w1h, (w)eek, (d)ay, (h)our, (m)inute, (s)econd)')
+    parser = optparse.OptionParser(
+        epilog='Time formats are: "%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d" (UNIX timestamp), "-%d" (Relative time in seconds), BIND format (e.g. 1w1h, (w)eek, (d)ay, (h)our, (m)inute, (s)econd)')
     parser.add_option('-c', '--config', dest='config', type='string',
-        help='config file', default=DEFAULT_CONFIG_FILE)
+                      help='config file', default=DEFAULT_CONFIG_FILE)
     parser.add_option('-r', '--rrset', dest='rrset', type='string',
-        help='rrset <ONAME>[/<RRTYPE>[/BAILIWICK]]')
+                      help='rrset <ONAME>[/<RRTYPE>[/BAILIWICK]]')
     parser.add_option('-n', '--rdataname', dest='rdata_name', type='string',
-        help='rdata name <NAME>[/<RRTYPE>]')
+                      help='rdata name <NAME>[/<RRTYPE>]')
     parser.add_option('-i', '--rdataip', dest='rdata_ip', type='string',
-        help='rdata ip <IPADDRESS|IPRANGE|IPNETWORK>')
+                      help='rdata ip <IPADDRESS|IPRANGE|IPNETWORK>')
     parser.add_option('-t', '--rrtype', dest='rrtype', type='string',
-        help='rrset or rdata rrtype')
+                      help='rrset or rdata rrtype')
     parser.add_option('-b', '--bailiwick', dest='bailiwick', type='string',
-        help='rrset bailiwick')
+                      help='rrset bailiwick')
     parser.add_option('-s', '--sort', dest='sort', type='string', help='sort key')
     parser.add_option('-R', '--reverse', dest='reverse', action='store_true', default=False,
-        help='reverse sort')
+                      help='reverse sort')
     parser.add_option('-j', '--json', dest='json', action='store_true', default=False,
-        help='output in JSON format')
+                      help='output in JSON format')
     parser.add_option('-l', '--limit', dest='limit', type='int', default=0,
-        help='limit number of results')
+                      help='limit number of results')
 
     parser.add_option('', '--before', dest='before', type='string', help='only output results seen before this time')
     parser.add_option('', '--after', dest='after', type='string', help='only output results seen after this time')
@@ -214,21 +224,20 @@ def main():
     try:
         if options.before:
             options.before = time_parse(options.before)
-    except ValueError, e:
-        print 'Could not parse before: {}'.format(options.before)
+    except ValueError as e:
+        print('Could not parse before: {}'.format(options.before))
 
     try:
         if options.after:
             options.after = time_parse(options.after)
-    except ValueError, e:
-        print 'Could not parse after: {}'.format(options.after)
+    except ValueError as e:
+        print('Could not parse after: {}'.format(options.after))
 
     try:
         cfg = parse_config(options.config)
-    except IOError, e:
+    except IOError as e:
         sys.stderr.write(e.message)
         sys.exit(1)
-
 
     if not 'DNSDB_SERVER' in cfg:
         cfg['DNSDB_SERVER'] = DEFAULT_DNSDB_SERVER
@@ -270,14 +279,16 @@ def main():
                 if not options.sort in results[0]:
                     sort_keys = results[0].keys()
                     sort_keys.sort()
-                    sys.stderr.write('dnsdb_query: invalid sort key "%s". valid sort keys are %s\n' % (options.sort, ', '.join(sort_keys)))
+                    sys.stderr.write('dnsdb_query: invalid sort key "%s". valid sort keys are %s\n' % (
+                    options.sort, ', '.join(sort_keys)))
                     sys.exit(1)
                 results.sort(key=lambda r: r[options.sort], reverse=options.reverse)
         for res in results:
             sys.stdout.write('%s\n' % fmt_func(res))
-    except (urllib2.HTTPError, urllib2.URLError), e:
-        print >>sys.stderr, str(e)
+    except (urllib2.HTTPError, urllib2.URLError) as e:
+        print(sys.stderr, str(e))
         sys.exit(1)
+
 
 if __name__ == '__main__':
     main()
