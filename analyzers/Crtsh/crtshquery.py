@@ -3,7 +3,7 @@
 
 import requests
 import json
-import re
+import regex
 from cortexutils.analyzer import Analyzer
 
 

@@ -3,3 +3,4 @@ pytz
 python-dateutil
 datetime
 cortexutils
+regex

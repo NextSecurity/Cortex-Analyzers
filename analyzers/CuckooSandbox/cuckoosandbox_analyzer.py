@@ -4,6 +4,7 @@ import requests
 import time
 from os.path import basename
 from cortexutils.analyzer import Analyzer
+from pathlib import Path
 
 
 class CuckooSandboxAnalyzer(Analyzer):
@@ -54,9 +55,16 @@ class CuckooSandboxAnalyzer(Analyzer):
                 headers['Authorization'] = "Bearer {0}".format(self.token)
 
             # file analysis
-            if self.data_type == 'file':
-                filepath = self.get_param('file', None, 'File is missing')
-                filename = self.get_param('filename', basename(filepath))
+            if self.data_type == 'file' or self.data_type == 'file_path':
+                filepath = ''
+                filename = ''
+                if self.data_type == 'file':
+                    filepath = self.get_param('file', None, 'File is missing')
+                    filename = self.get_param('filename', basename(filepath))
+                elif self.data_type == 'file_path':
+                    filepath = self.get_data()
+                    filename = Path(filepath).name
+
                 with open(filepath, "rb") as sample:
                     files = {"file": (filename, sample)}
                     response = requests.post(self.url + 'tasks/create/file', files=files, headers=headers, verify=self.verify_ssl)

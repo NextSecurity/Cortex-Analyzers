@@ -2,7 +2,7 @@
 
 import ipaddress
 import os
-import re
+import regex
 from io import open
 from time import sleep
 import datetime as dt

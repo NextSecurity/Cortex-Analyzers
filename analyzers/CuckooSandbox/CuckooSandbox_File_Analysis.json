@@ -5,7 +5,7 @@
   "url": "https://github.com/garanews/Cortex-Analyzers",
   "license": "AGPL-V3",
   "description": "Cuckoo Sandbox file analysis with Internet access.",
-  "dataTypeList": ["file"],
+  "dataTypeList": ["file", "file_path"],
   "command": "CuckooSandbox/cuckoosandbox_analyzer.py",
   "baseConfig": "CuckooSandbox",
   "configurationItems": [

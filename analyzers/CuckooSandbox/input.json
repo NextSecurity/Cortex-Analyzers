@@ -1,8 +1,8 @@
 {
   "dataType": "url",
-  "data": "http://www.example.com",
+  "data": "http://www.microsoft.com",
   "config" : {
-    "url": "",
-    "token": ""
+    "url": "https://sandboxapi.nextsecurity.co/",
+    "token": "S1KnzV9Ml4JeD-kKtoqnlQ"
   }
 }

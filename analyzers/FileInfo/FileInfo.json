@@ -5,7 +5,7 @@
   "url": "https://github.com/nextsecurity/Cortex-Analyzers-Modified",
   "license": "AGPL-V3",
   "description": "Parse files in several formats such as OLE and OpenXML to detect VBA macros, extract their source code, generate useful information on PE, PDF files...",
-  "dataTypeList": ["file"],
+  "dataTypeList": ["file", "file_path"],
   "baseConfig": "FileInfo",
   "command": "FileInfo/fileinfo_analyzer.py",
   "configurationItems": [

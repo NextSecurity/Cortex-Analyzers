@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+
 import pyexifinfo
 import magic
 import os
-
+from pathlib import Path
 from cortexutils.analyzer import Analyzer
 from submodules import available_submodules
 from submodules.submodule_metadata import MetadataSubmodule
@@ -12,8 +13,14 @@ from submodules.submodule_manalyze import ManalyzeSubmodule
 class FileInfoAnalyzer(Analyzer):
     def __init__(self):
         Analyzer.__init__(self)
-        self.filepath = self.get_param('file', None, 'File parameter is missing.')
-        self.filename = self.get_param('filename', None, 'Filename is missing.')
+
+        if self.data_type == 'file':
+            self.filepath = self.get_param('file', None, 'File parameter is missing.')
+            self.filename = self.get_param('filename', None, 'Filename is missing.')
+        elif self.data_type == 'file_path':
+            self.filepath = self.get_data()
+            self.filename = Path(self.filepath).name
+
         self.filetype = pyexifinfo.fileType(self.filepath)
         self.mimetype = magic.Magic(mime=True).from_file(self.filepath)
 

@@ -20,7 +20,7 @@ import errno
 import locale
 import optparse
 import os
-import re
+import regex
 import sys
 import time
 import urllib

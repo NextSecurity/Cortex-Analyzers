@@ -66,6 +66,8 @@ class YaraAnalyzer(Analyzer):
     def run(self):
         if self.data_type == 'file':
             self.report({'results': self.check(self.get_param('file'))})
+        elif self.data_type == 'file_path':
+            self.report({'results': self.check(self.get_data())})
         else:
             self.error('Wrong data type.')
 

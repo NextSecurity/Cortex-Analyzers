@@ -52,6 +52,10 @@ class VirusshareAnalyzer(Analyzer):
             filepath = self.get_param('file')
             md5hasher = FileHash('md5')
             searchhash = md5hasher.hash_file(filepath)
+        elif self.data_type == 'file_path':
+            filepath = self.get_data()
+            md5hasher = FileHash('md5')
+            searchhash = md5hasher.hash_file(filepath)
         else:
             self.error('Unsupported data type.')
 

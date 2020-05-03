@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-import re
+
+import regex
 from copy import deepcopy
 from cortexutils.analyzer import Analyzer
 from threatresponse import ThreatResponse

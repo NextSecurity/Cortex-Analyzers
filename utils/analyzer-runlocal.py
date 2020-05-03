@@ -15,7 +15,6 @@ class AnalyzerRunlocalException(Exception):
 
 
 class AnalyzerRunlocal():
-
     args = None
 
     def __init__(self):
@@ -75,7 +74,7 @@ class AnalyzerRunlocal():
         self.stderr('runtime:  {}'.format(timer_end - timer_start))
         self.stderr()
 
-        output_filename = os.path.join(job_path,'output' ,'output.json')
+        output_filename = os.path.join(job_path, 'output', 'output.json')
         if not os.path.isfile(output_filename):
             self.stderr('\nERROR: Unable to locate expected output file {}\n'.format(output_filename))
             exit(1)
