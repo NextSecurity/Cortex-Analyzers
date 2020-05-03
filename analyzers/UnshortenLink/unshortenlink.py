@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 import requests
-import regex
+import regex as re
 from cortexutils.analyzer import Analyzer
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
-import regex
+import regex as re
 import os
 import subprocess
 from cortexutils.analyzer import Analyzer
